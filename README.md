@@ -1,8 +1,8 @@
-Flight Planning Application
+# Flight Planning Application
 
 This is a Java application that helps users plan flights between cities served by an airline. It takes two input files: one containing a list of available flight legs with their corresponding costs and durations, and another containing a list of requested flight plans. The application finds all possible flight routes between the requested origin and destination cities and outputs the three most efficient routes based on the user's preference for sorting by time or cost.
 
-Features
+## Features
 
 - Reads flight data from an input file containing origin, destination, cost, and duration for each flight leg
 - Reads requested flight plans from an input file containing origin, destination, and sorting preference (time or cost)
