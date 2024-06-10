@@ -4,7 +4,7 @@ Replace `<flight_data_file>`, `<requested_flights_file>`, and `<output_file>` wi
 
 ### Input File Formats
 
-#### Flight Data File
+Flight Data File
 The flight data file should contain the following information:
 - The first line specifies the total number of flight legs
 - Each subsequent line contains four values separated by a pipe symbol (`|`): origin city, destination city, cost, and duration (in minutes)
@@ -16,7 +16,7 @@ Austin|Houston|95|39
 Dallas|Houston|101|51
 Austin|Chicago|144|192
 
-#### Requested Flights File
+Requested Flights File
 The requested flights file should contain the following information:
 - The first line specifies the total number of requested flight plans
 - Each subsequent line contains three values separated by a pipe symbol (`|`): origin city, destination city, and sorting preference (either `T` for time or `C` for cost)
@@ -26,7 +26,7 @@ Example:
 Dallas|Houston|T
 Chicago|Dallas|C
 
-### Output File
+Output File
 The application will generate an output file containing the flight plans for each requested flight. If no feasible flight plan exists, an error message will be printed. The output format is as follows:
 Flight 1: <origin>, <destination> (<sorting_preference>)
 Path 1: <city_1> -> <city_2> -> ... -> <city_n>. Time: <total_duration> Cost: <total_cost>
